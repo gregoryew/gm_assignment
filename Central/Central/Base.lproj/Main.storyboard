@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MqK-C6-IY2">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Central View Controller-->
+        <scene sceneID="t2k-Fx-Knn">
+            <objects>
+                <viewController id="MqK-C6-IY2" customClass="CentralViewController" customModule="Central" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M6r-b3-7Ik">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1HW-HO-aLe" userLabel="Status">
+                                <rect key="frame" x="4" y="653" width="390" height="83"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIy-Fb-lPx">
+                                        <rect key="frame" x="20" y="20" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="42q-62-Nzl"/>
+                                            <constraint firstAttribute="height" constant="43" id="QhQ-ab-g9J"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="bluetooth"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMN-eS-hmb">
+                                        <rect key="frame" x="130" y="31" width="240" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwG-5b-ZBW">
+                                        <rect key="frame" x="72" y="20" width="44" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="8OU-y1-AHn"/>
+                                            <constraint firstAttribute="height" constant="43" id="QGr-vO-WaI"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="locked"/>
+                                        <connections>
+                                            <action selector="lockButtonTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="L3d-n6-lIE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="2iT-a0-9PX"/>
+                                    <constraint firstItem="RMN-eS-hmb" firstAttribute="top" secondItem="1HW-HO-aLe" secondAttribute="top" constant="31" id="N78-zU-H4h"/>
+                                    <constraint firstAttribute="trailing" secondItem="RMN-eS-hmb" secondAttribute="trailing" constant="20" symbolic="YES" id="OtT-Hu-AC2"/>
+                                    <constraint firstItem="FIy-Fb-lPx" firstAttribute="leading" secondItem="1HW-HO-aLe" secondAttribute="leading" constant="20" symbolic="YES" id="Ppg-ed-U44"/>
+                                    <constraint firstItem="MwG-5b-ZBW" firstAttribute="top" secondItem="1HW-HO-aLe" secondAttribute="top" constant="20" symbolic="YES" id="SGr-AG-Rw1"/>
+                                    <constraint firstItem="FIy-Fb-lPx" firstAttribute="top" secondItem="1HW-HO-aLe" secondAttribute="top" constant="20" symbolic="YES" id="aHu-9w-84l"/>
+                                    <constraint firstItem="MwG-5b-ZBW" firstAttribute="leading" secondItem="FIy-Fb-lPx" secondAttribute="trailing" constant="8" symbolic="YES" id="fFP-wd-TQ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="RMN-eS-hmb" secondAttribute="bottom" constant="31" id="hHR-f3-hB2"/>
+                                    <constraint firstItem="RMN-eS-hmb" firstAttribute="leading" secondItem="MwG-5b-ZBW" secondAttribute="trailing" constant="14" id="ylT-vE-irZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="391-09-dnL" userLabel="Mailbox">
+                                <rect key="frame" x="13" y="168" width="388" height="334"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="openMailbox" translatesAutoresizingMaskIntoConstraints="NO" id="Iyx-3g-fbL">
+                                        <rect key="frame" x="43" y="21" width="277" height="313"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA1-9s-SHR">
+                                        <rect key="frame" x="218" y="87" width="124" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="flagdown"/>
+                                        <connections>
+                                            <action selector="downFlagTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="ihE-Ny-g7p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyy-rv-cfb">
+                                        <rect key="frame" x="219" y="-11" width="45" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="flagup"/>
+                                        <connections>
+                                            <action selector="upFlagTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="5Jb-a6-m4V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONk-gD-13a">
+                                        <rect key="frame" x="20" y="21" width="191" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="mailboxDoorTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="Kbh-HH-qA7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYb-iE-fA5">
+                                        <rect key="frame" x="20" y="59" width="168" height="89"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="package"/>
+                                        <connections>
+                                            <action selector="packageTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="1vX-PC-IBN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="388" id="Vk8-kr-F13"/>
+                                    <constraint firstAttribute="height" constant="334" id="jZF-1r-6B4"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1J1-PQ-YWF">
+                                <rect key="frame" x="20" y="536" width="374" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="9Dr-nr-IWb"/>
+                                    <constraint firstAttribute="height" constant="128" id="yZ8-sI-qEn"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Got Mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vt-5Q-ghg">
+                                <rect key="frame" x="20" y="9" width="374" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="PpI-FQ-U0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU2-3f-qXP">
+                                <rect key="frame" x="310" y="9" width="90" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="LDn-Dd-VdT"/>
+                                    <constraint firstAttribute="height" constant="37" id="NcK-gs-yNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Get Loc">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                </state>
+                                <connections>
+                                    <action selector="RegisterTapped:" destination="MqK-C6-IY2" eventType="touchUpInside" id="ftS-Wr-fgn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vjE-V0-tiK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5vt-5Q-ghg" firstAttribute="leading" secondItem="vjE-V0-tiK" secondAttribute="leading" constant="20" id="4co-Fq-zy8"/>
+                            <constraint firstItem="1HW-HO-aLe" firstAttribute="leading" secondItem="vjE-V0-tiK" secondAttribute="leading" constant="4" id="7Am-RK-pHD"/>
+                            <constraint firstItem="1J1-PQ-YWF" firstAttribute="leading" secondItem="vjE-V0-tiK" secondAttribute="leading" constant="20" id="9nb-lB-tnv"/>
+                            <constraint firstItem="vjE-V0-tiK" firstAttribute="trailing" secondItem="1HW-HO-aLe" secondAttribute="trailing" constant="20" id="Dt1-wT-HLa"/>
+                            <constraint firstItem="zU2-3f-qXP" firstAttribute="top" secondItem="vjE-V0-tiK" secondAttribute="top" constant="9" id="c6J-dL-Wao"/>
+                            <constraint firstItem="1HW-HO-aLe" firstAttribute="bottom" secondItem="vjE-V0-tiK" secondAttribute="bottom" id="cMu-Ra-kse"/>
+                            <constraint firstItem="vjE-V0-tiK" firstAttribute="trailing" secondItem="5vt-5Q-ghg" secondAttribute="trailing" constant="20" id="h69-Fi-MTm"/>
+                            <constraint firstItem="vjE-V0-tiK" firstAttribute="trailing" secondItem="zU2-3f-qXP" secondAttribute="trailing" constant="14" id="kZZ-mC-WJK"/>
+                            <constraint firstItem="5vt-5Q-ghg" firstAttribute="top" secondItem="vjE-V0-tiK" secondAttribute="top" constant="9" id="koE-zt-5ef"/>
+                            <constraint firstItem="391-09-dnL" firstAttribute="centerY" secondItem="M6r-b3-7Ik" secondAttribute="centerY" constant="-33" id="nxM-S5-aKR"/>
+                            <constraint firstItem="vjE-V0-tiK" firstAttribute="trailing" secondItem="1J1-PQ-YWF" secondAttribute="trailing" constant="20" id="qjj-nX-tZg"/>
+                            <constraint firstItem="391-09-dnL" firstAttribute="centerX" secondItem="M6r-b3-7Ik" secondAttribute="centerX" id="vT0-DN-FgG"/>
+                            <constraint firstItem="vjE-V0-tiK" firstAttribute="bottom" secondItem="1J1-PQ-YWF" secondAttribute="bottom" constant="72" id="wRJ-KO-Bia"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Register" destination="zU2-3f-qXP" id="gtf-PP-fxT"/>
+                        <outlet property="bluetoothConnection" destination="FIy-Fb-lPx" id="BDH-hf-JQk"/>
+                        <outlet property="flagDown" destination="IA1-9s-SHR" id="lyY-op-hwo"/>
+                        <outlet property="flagUp" destination="cyy-rv-cfb" id="8hm-VJ-7uS"/>
+                        <outlet property="lockedBtn" destination="MwG-5b-ZBW" id="hnv-cb-oo1"/>
+                        <outlet property="mailbox" destination="Iyx-3g-fbL" id="2P2-SK-rsh"/>
+                        <outlet property="mailboxDoor" destination="ONk-gD-13a" id="w3z-WB-FLT"/>
+                        <outlet property="package" destination="SYb-iE-fA5" id="wFx-ld-GKi"/>
+                        <outlet property="statusLbl" destination="RMN-eS-hmb" id="OML-cL-3oa"/>
+                        <outlet property="statusLog" destination="1J1-PQ-YWF" id="meO-bf-874"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxU-Mw-btu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="-158.96739130434784"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluetooth" width="230" height="237"/>
+        <image name="flagdown" width="702" height="236"/>
+        <image name="flagup" width="240" height="678"/>
+        <image name="locked" width="71" height="88"/>
+        <image name="openMailbox" width="1356" height="1486"/>
+        <image name="package" width="486" height="382"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

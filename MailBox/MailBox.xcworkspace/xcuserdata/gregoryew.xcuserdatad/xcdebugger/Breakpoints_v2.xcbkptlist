@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "69DBC820-57BB-4E6B-9295-E7906C4A2C8B"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "816D1681-C32D-431C-9A7A-41EE5AB91C41"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MailBox/PeripheralViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "Event(message:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "816D1681-C32D-431C-9A7A-41EE5AB91C41 - e8cc07fee97b2e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MailBox.PeripheralViewController.Event(message: MailBox.Message) -&gt; MailBox.MessageStruct"
+                  moduleName = "MailBox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gregoryew/gm/peripheral/MailBox/MailBox/PeripheralViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "816D1681-C32D-431C-9A7A-41EE5AB91C41 - e8cc07fee97b2e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MailBox.PeripheralViewController.Event(message: MailBox.Message) -&gt; MailBox.MessageStruct"
+                  moduleName = "MailBox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gregoryew/gm/peripheral/MailBox/MailBox/PeripheralViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "468">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F55963C-682A-4964-A7C1-7A4510EC9BBD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MailBox/Peripheral.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "peripheralManager(_:didReceiveWrite:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "629BC79F-6B4B-46DD-B722-1B48947B9A5B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MailBox/Peripheral.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "sendData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

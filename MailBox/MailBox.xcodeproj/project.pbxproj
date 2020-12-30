@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C571112F2597E23B00F943EE /* Clibsodium in Frameworks */ = {isa = PBXBuildFile; productRef = C571112E2597E23B00F943EE /* Clibsodium */; };
+		C57111312597E23B00F943EE /* Sodium in Frameworks */ = {isa = PBXBuildFile; productRef = C57111302597E23B00F943EE /* Sodium */; };
+		C57F80032593BC8200ABF9A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F80022593BC8200ABF9A7 /* AppDelegate.swift */; };
+		C57F80072593BC8200ABF9A7 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F80062593BC8200ABF9A7 /* PeripheralViewController.swift */; };
+		C57F800A2593BC8200ABF9A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57F80082593BC8200ABF9A7 /* Main.storyboard */; };
+		C57F800C2593BC8500ABF9A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57F800B2593BC8500ABF9A7 /* Assets.xcassets */; };
+		C57F800F2593BC8500ABF9A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57F800D2593BC8500ABF9A7 /* LaunchScreen.storyboard */; };
+		C57F8066259500A600ABF9A7 /* PublicPrivateKeyEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F8065259500A600ABF9A7 /* PublicPrivateKeyEncryption.swift */; };
+		C57F8069259500AF00ABF9A7 /* MessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F8068259500AF00ABF9A7 /* MessageProtocol.swift */; };
+		C57F806C2595010200ABF9A7 /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57F806B2595010200ABF9A7 /* Peripheral.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C57F7FFF2593BC8200ABF9A7 /* MailBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57F80022593BC8200ABF9A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C57F80062593BC8200ABF9A7 /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
+		C57F80092593BC8200ABF9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C57F800B2593BC8500ABF9A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C57F800E2593BC8500ABF9A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C57F80102593BC8500ABF9A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57F8065259500A600ABF9A7 /* PublicPrivateKeyEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicPrivateKeyEncryption.swift; sourceTree = "<group>"; };
+		C57F8068259500AF00ABF9A7 /* MessageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageProtocol.swift; sourceTree = "<group>"; };
+		C57F806B2595010200ABF9A7 /* Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C57F7FFC2593BC8200ABF9A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C571112F2597E23B00F943EE /* Clibsodium in Frameworks */,
+				C57111312597E23B00F943EE /* Sodium in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C57F7FF62593BC8200ABF9A7 = {
+			isa = PBXGroup;
+			children = (
+				C57F80012593BC8200ABF9A7 /* MailBox */,
+				C57F80002593BC8200ABF9A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C57F80002593BC8200ABF9A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C57F7FFF2593BC8200ABF9A7 /* MailBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C57F80012593BC8200ABF9A7 /* MailBox */ = {
+			isa = PBXGroup;
+			children = (
+				C57F80022593BC8200ABF9A7 /* AppDelegate.swift */,
+				C57F80062593BC8200ABF9A7 /* PeripheralViewController.swift */,
+				C57F80082593BC8200ABF9A7 /* Main.storyboard */,
+				C57F800B2593BC8500ABF9A7 /* Assets.xcassets */,
+				C57F800D2593BC8500ABF9A7 /* LaunchScreen.storyboard */,
+				C57F8065259500A600ABF9A7 /* PublicPrivateKeyEncryption.swift */,
+				C57F8068259500AF00ABF9A7 /* MessageProtocol.swift */,
+				C57F80102593BC8500ABF9A7 /* Info.plist */,
+				C57F806B2595010200ABF9A7 /* Peripheral.swift */,
+			);
+			path = MailBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C57F7FFE2593BC8200ABF9A7 /* MailBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C57F80132593BC8500ABF9A7 /* Build configuration list for PBXNativeTarget "MailBox" */;
+			buildPhases = (
+				C57F7FFB2593BC8200ABF9A7 /* Sources */,
+				C57F7FFC2593BC8200ABF9A7 /* Frameworks */,
+				C57F7FFD2593BC8200ABF9A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailBox;
+			packageProductDependencies = (
+				C571112E2597E23B00F943EE /* Clibsodium */,
+				C57111302597E23B00F943EE /* Sodium */,
+			);
+			productName = MailBox;
+			productReference = C57F7FFF2593BC8200ABF9A7 /* MailBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C57F7FF72593BC8200ABF9A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C57F7FFE2593BC8200ABF9A7 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C57F7FFA2593BC8200ABF9A7 /* Build configuration list for PBXProject "MailBox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C57F7FF62593BC8200ABF9A7;
+			packageReferences = (
+				C571112D2597E23B00F943EE /* XCRemoteSwiftPackageReference "swift-sodium" */,
+			);
+			productRefGroup = C57F80002593BC8200ABF9A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C57F7FFE2593BC8200ABF9A7 /* MailBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C57F7FFD2593BC8200ABF9A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F800F2593BC8500ABF9A7 /* LaunchScreen.storyboard in Resources */,
+				C57F800C2593BC8500ABF9A7 /* Assets.xcassets in Resources */,
+				C57F800A2593BC8200ABF9A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C57F7FFB2593BC8200ABF9A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C57F80072593BC8200ABF9A7 /* PeripheralViewController.swift in Sources */,
+				C57F806C2595010200ABF9A7 /* Peripheral.swift in Sources */,
+				C57F8069259500AF00ABF9A7 /* MessageProtocol.swift in Sources */,
+				C57F80032593BC8200ABF9A7 /* AppDelegate.swift in Sources */,
+				C57F8066259500A600ABF9A7 /* PublicPrivateKeyEncryption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C57F80082593BC8200ABF9A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57F80092593BC8200ABF9A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C57F800D2593BC8500ABF9A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C57F800E2593BC8500ABF9A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C57F80112593BC8500ABF9A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C57F80122593BC8500ABF9A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C57F80142593BC8500ABF9A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVC6BMPCPP;
+				INFOPLIST_FILE = MailBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregsiosapps.MailBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C57F80152593BC8500ABF9A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVC6BMPCPP;
+				INFOPLIST_FILE = MailBox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gregsiosapps.MailBox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C57F7FFA2593BC8200ABF9A7 /* Build configuration list for PBXProject "MailBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57F80112593BC8500ABF9A7 /* Debug */,
+				C57F80122593BC8500ABF9A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C57F80132593BC8500ABF9A7 /* Build configuration list for PBXNativeTarget "MailBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57F80142593BC8500ABF9A7 /* Debug */,
+				C57F80152593BC8500ABF9A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C571112D2597E23B00F943EE /* XCRemoteSwiftPackageReference "swift-sodium" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jedisct1/swift-sodium.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C571112E2597E23B00F943EE /* Clibsodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C571112D2597E23B00F943EE /* XCRemoteSwiftPackageReference "swift-sodium" */;
+			productName = Clibsodium;
+		};
+		C57111302597E23B00F943EE /* Sodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C571112D2597E23B00F943EE /* XCRemoteSwiftPackageReference "swift-sodium" */;
+			productName = Sodium;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C57F7FF72593BC8200ABF9A7 /* Project object */;
+}
